@@ -1,0 +1,19 @@
+.page-header {
+    background-image: url("../../../assets/images/contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.contact textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+.contact input, .contact textarea {
+    box-shadow: 0px 0px 5px 2px #ccc;
+}
+.contact .contact_info_title {
+    color: var(--main-black-color);
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.subscribe {
+    background-image: url("../../../../assets/images/newsletter.jpg");
+    background-size: cover;
+}
+.subscribe .button {
+    background-color: white;
+    border-color: white;
+}

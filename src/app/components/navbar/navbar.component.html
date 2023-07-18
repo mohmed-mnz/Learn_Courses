@@ -1,0 +1,48 @@
+<div class="sub-nav py-1">
+    <div class="container">
+        <div class="sub-nav-content text-center text-md-start text-white d-flex gap-2 justify-content-center justify-content-md-between align-items-center flex-wrap">
+            <p>Have any Questions?</p>
+            <div class="sub-contact d-flex flex-wrap gap-2 justify-content-center align-items-center">
+                <p><i class="fa-solid fa-phone me-1"></i> +201207933578</p>
+                <p><i class="fa-solid fa-envelope me-1"></i> info@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bolder fs-3" href="#"><i class="fa-solid fa-lines-leaning me-1"></i> Learn <span>IT</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center gap-1 ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}">Contact</a>
+          </li>
+          <li *ngIf="loginFlag == true" class="nav-item">
+            <a class="nav-link" routerLink="skillstest" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}">Skill Test</a>
+          </li>
+          <li *ngIf="loginFlag == false" class="nav-item">
+            <a class="button" routerLink="regist" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}">Regist</a>
+          </li>
+          <li *ngIf="loginFlag == true" class="nav-item">
+            <button class="button">{{user.userName}}</button>
+          </li>
+          <li *ngIf="loginFlag == false" class="nav-item">
+            <a class="button" routerLink="login" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fs-5 fa-right-to-bracket"></i></a>
+          </li>
+          <li *ngIf="loginFlag == true" class="nav-item">
+            <button class="button" (click)="logout()"><i class="fa-solid fa-right-from-bracket fs-5"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,40 @@
+.event-box {
+    box-shadow: 0px 0px 5px 1px var(--secondary-black-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.event-box img {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.event-box:hover img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.event-box .event-date {
+    color: var(--primary-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.event-box:hover .event-date {
+    color: white;
+    background-color: var(--primary-color);
+}
+.event-box .event-info h4 {
+    color: var(--main-black-color);
+}
+.event-box .event-info small {
+    color: var(--secondary-black-color);
+}

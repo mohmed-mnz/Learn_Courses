@@ -1,0 +1,47 @@
+<div class="faq-section section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <h3>Why Choose Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row mt-5 align-items-start justify-content-center gy-4">
+            <div class="col-md-6 d-flex flex-column gap-3">
+                <ng-container *ngFor="let faq of myFaqs">
+                    <div class="faq-box rounded-3 p-3">
+                        <a data-bs-toggle="collapse" href="#{{faq.id}}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-angle-right me-2"></i>{{faq.title}}</a>
+                        <p id="{{faq.id}}" class="text-black-50 fw-bold ps-4 mt-3 collapse">{{faq.desc}}</p>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="col-md-6">
+                <div class="faq-img rounded-3 overflow-hidden position-relative">
+                    <img src="assets/images/faq.jpg" class="img-fluid w-100 d-block" alt="faq">
+                    <!-- Button trigger modal -->
+<button type="button" class="button rounded-circle fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-circle-play"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Learin-IT</h1>
+          <button type="button" (click)="stopVideo(myvideo)" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video #myvideo controls class="w-100 rounded-3">
+            <source src="assets/images/about-video.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- [ngClass]="{'d-none':flag==false,'d-block':flag==true}" -->

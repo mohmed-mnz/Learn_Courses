@@ -1,0 +1,20 @@
+.contact-box .contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e2dfdf;
+    color: var(--primary-color);
+    transition: var(--main-transition);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.contact-box:hover .contact-icon {
+    background-color: var(--primary-color);
+    color: white;
+}

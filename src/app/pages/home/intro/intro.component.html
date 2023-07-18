@@ -1,0 +1,19 @@
+<div class="intro section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <h3>Welcome To Learin-IT E-Learning</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center gy-4">
+            <ng-container *ngFor="let item of myIntroList">
+                <div class="col-6 col-md-3">
+                    <div class="intro-box rounded-3 p-3 d-flex flex-column align-items-center text-center gap-2">
+                        <img src="{{item.icon}}" alt="intor" class="img-fluid d-block">
+                        <h5>{{item.title}}</h5>
+                        <p>{{item.desc}}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

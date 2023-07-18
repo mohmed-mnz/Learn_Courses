@@ -1,0 +1,44 @@
+<div class="footer">
+    <div class="container">
+        <div class="main-footer section-padding">
+            <div class="row gy-4">
+                <div class="col-sm-6 col-lg-4">
+                    <h4 class="fw-bolder fs-3"><i class="fa-solid fa-lines-leaning me-1"></i> Learn <span>IT</span></h4>
+                    <p class="text-white-50 my-4">Lorem ipsum dolor sit ametium,<br> consectetur adipiscing elit.</p>
+                    <ul class="social-links d-flex align-items-center gap-2">
+                        <ng-container *ngFor="let item of mySocial">
+                            <li><a href="{{item.link}}"><i class="{{item.icon}}"></i></a></li>
+                        </ng-container>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h4 class="text-white mb-4">Contact US</h4>
+                    <div class="text-white-50">
+                        <p>Email: Info@gmail.com</p>
+                        <p>Phone: +(2) 1207933578</p>
+                        <p>Address: 40 Baria Sreet 133/2 New York City, United States</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="quick-links d-flex flex-column gap-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2 d-none d-md-block">
+                    <h4 class="text-white mb-4">Mobile</h4>
+                    <img src="assets/images/mobile_1.png" class="img-fluid w-100 d-block mb-3" alt="mobile app">
+                    <img src="assets/images/mobile_2.png" class="img-fluid w-100 d-block mb-3" alt="mobile app">
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="py-3 text-center text-white">
+            &copy; All Rights Reserved, Coded by Developers Team
+        </div>
+    </div>
+</div>

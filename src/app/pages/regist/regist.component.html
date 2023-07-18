@@ -1,0 +1,184 @@
+
+<div class="page-header section-padding d-flex justify-content-center align-items-center">
+  <h3 class="display-3 text-white fw-bolder position-relative">Join US</h3>
+</div>
+
+<div class="regist section-padding">
+  <div class="container">
+      <div class="section-heading">
+          <h3>Join Our Family</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="row mt-5 justify-content-center align-items-center gy-4">
+          <div class="col-md-5">
+              <img src="assets/images/regist.jpg" class="img-fluid w-100 d-block" alt="regist">
+          </div>
+          <div class="col-lg-7">
+              <form [formGroup]="myUserForm" (submit)="submit($event)">
+                  <div class="mb-3">
+                    <label for="userName" class="form-label">User Name</label>
+                    <input
+                      formControlName="userName"
+                      type="text"
+                      class="form-control"
+                      id="userName"
+                      placeholder="Enter User Name"
+                    />
+                    <ng-container *ngIf="getusername.touched">
+                      <div
+                        *ngIf="getusername.hasError('required')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                      User Name is required
+                      </div>
+                      <div
+                        *ngIf="getusername.hasError('minlength')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                      User Name length must be greater than 5
+                      </div>
+                    </ng-container>
+                  </div>
+            
+            
+                  <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input
+                      formControlName="age"
+                      type="number"
+                      class="form-control"
+                      id="age"
+                      placeholder="Enter Age"
+                    />
+                    <ng-container *ngIf="getuserage.touched">
+                      <div
+                        *ngIf="getuserage.hasError('required')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                        Age is required
+                      </div>
+            
+                      <div
+                      *ngIf="getuserage.hasError('min')"
+                      id="emailHelp"
+                      class="form-text text-danger"
+                    >
+                   Age Must Be greater than 15
+                    </div>
+                    </ng-container>
+                  </div>
+            
+            
+            
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      formControlName="phone"
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Enter Phone"
+                    />
+                    <ng-container *ngIf="getuserphone.touched">
+                      <div
+                        *ngIf="getuserphone.hasError('required')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                        Phone is required
+                      </div>
+                      <div
+                        *ngIf="getuserphone.hasError('pattern')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                    >
+                        Enter Valid Phone Number
+                      </div>
+
+
+
+                    </ng-container>
+                    <div
+                    *ngIf="PhoneFlag == true"
+                    
+                    class="form-text text-danger"
+                    >
+                    Phone Is Already Exist
+                    </div>
+                  </div>
+            
+            
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      formControlName="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter Email"
+                    />
+                    <ng-container *ngIf="getuseremail.touched">
+                      <div
+                        *ngIf="getuseremail.hasError('required')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                        Email is required
+                      </div>
+            
+                      <div
+                      *ngIf="getuseremail.hasError('pattern')"
+                      id="emailHelp"
+                      class="form-text text-danger"
+                    >
+                      Enter Valid Email 
+                    </div>
+
+                    <div
+                    *ngIf="EmailFlag == true"
+                    
+                    class="form-text text-danger"
+                    >
+                    Email Is Already Exist
+                    </div>
+
+                    </ng-container>
+                  </div>
+              
+                  <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        formControlName="password"
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Enter Password"
+                      />
+                      <ng-container *ngIf="getuserpassword.touched">
+                        <div
+                          *ngIf="getuserpassword.hasError('required')"
+                          id="emailHelp"
+                          class="form-text text-danger"
+                        >
+                          Password is required
+                        </div>
+            
+                        <div
+                        *ngIf="getuserpassword.hasError('minlength')"
+                        id="emailHelp"
+                        class="form-text text-danger"
+                      >
+                        Password Should be more than 8 characters 
+                      </div>
+                      </ng-container>
+                    </div>
+            
+                  <button class="button">Sign Up</button>
+                </form>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="page-header section-padding d-flex justify-content-center align-items-center">
+    <h3 class="display-3 text-white fw-bolder">About US</h3>
+</div>
+
+<div class="about-section section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <h3>Know More About Learin-IT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center gy-4">
+            <ng-container *ngFor="let about of myAbout">
+                <div class="col-md-6 col-lg-4">
+                    <div class="about-box rounded-3 overflow-hidden">
+                        <div class="about-img overflow-hidden">
+                            <img src="{{about.image}}" class="img-fluid w-100 d-block" alt="about">
+                        </div>
+                        <div class="p-3">
+                            <h4 class="mb-3">{{about.title}}</h4>
+                            <p class="text-black-50 fw-bold">{{about.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+<app-faqs></app-faqs>
+<app-team></app-team>
+<app-subscribe></app-subscribe>

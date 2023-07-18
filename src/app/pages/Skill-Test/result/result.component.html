@@ -1,0 +1,23 @@
+<div class="page-header section-padding d-flex justify-content-center align-items-center">
+    <h3 class="display-3 text-white fw-bolder position-relative">Exam Result</h3>
+</div>
+
+<div class="exam-result section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="result-box rounded-5 text-center d-flex justify-content-center align-items-center flex-column gap-3 p-5">
+                    <h2 class="fw-bold">Good Effort, Happy that you try</h2>
+                    <img src="assets/images/result.png" class="img-fluid w-25 d-block" alt="result">
+                    <p class="fs-5">Your Score is: <span>{{score}}%</span></p>
+                    <p class="fs-5">You Answered <span>{{myCount}}</span> Questions Correctly out of <span>15</span></p>
+                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                        <button [routerLink]="['/skillstest/exam']" class="button">Test Again</button>
+                        <button class="button" [routerLink]="['']">Go Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
